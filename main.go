@@ -199,7 +199,7 @@ func mine(ctx context.Context, messageId string, client *ethclient.Client) {
 		fmt.Println("Response Status:", resp.Status)
 		spendTime := time.Since(startTime)
 		// fmt.Println("Response Body:", string(body))
-		fmt.Println(nostr.Now().Time(), "spend: ", spendTime, "!!!!!!!!!!!!!!!!!!!!!published to:", evNew.ID)
+		fmt.Println(nostr.Now().Time(), "spend: ", spendTime, "!天灵灵，地灵灵，NOSS块块现原形!published to:", evNew.ID)
 		atomic.StoreInt32(&nonceFound, 0)
 	case <-ctx.Done():
 		fmt.Print("done")
